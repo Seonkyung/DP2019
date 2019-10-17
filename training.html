@@ -8,7 +8,7 @@
         <mata name="keywords" content="HTML, 콘텐츠 프로그래밍, 계원" />
     </head>
     <body>
-        <a href="index.html">돌아가기</a>
+        <a href="index.html"><input type="button" value="돌아가기"/></a>
         <!-- h1~h6 제목. 순번x, 깊이(depth) o-->
         <h1>대한민국</h1>
         <h2>서울</h2>
@@ -77,5 +77,125 @@
             <dt>ordered list 순차적 목록</dt>
             <dt>순서에 중요한 의미가 있는 목록을 이야기한다.</dt>
         </dl>
+        <br>** 여기서부터는 3주차 수업 내용 **<br><br>
+        <!-- strong, em 와 대비되는 태그는 b, i> -->
+        <strong>강한 강조</strong>를 할 때 사용하는 건 strong<br>
+        <em>강조</em>를 할 때 사용, emphasize의 앞 글자를 따온 em<br>
+
+        <b>볼드체</b>는 bold에서 따온 b<br>
+        <i>이텔릭체</i>는 italic에서 따온 i<br><br>
+        
+        <!-- ins 첨부글, del 삭제글 과 대비되는 태그는 u, strike -->
+        <ins>첨부하는 내용은 ins</ins><br>
+        <del>쓸 데 없는 내용이나 변경되어 삭제될 내용은 del</del><br>
+
+        <u>underline, 밑줄이라는 단어에서 따온 u</u><br>
+        <strike>야구에서 후려치다같은 strike.. 중간줄</strike>
+        <br><br>
+        html에서는 모양에 국한되지 않고 기능을 중심으로 하는 것이 중요함<br><br>
+        
+        <!-- sup 윗첨자, sub 아랫첨자 -->
+        2<sup>2</sup> : 제곱수, 2의 2승같은 것은 sup 윗첨자<br>
+        H<sub>2</sub>O : 물의 화학식같은 것은 sub 아랫첨자
+        <br><br>
+    
+        <!-- 이미지 첨부에는 두 가지 방법이 있음 -->
+        <img src="images/qltyd.jpg" witdh="300px"/> 
+        <img src="./images/qltyd.jpg" height="300px"/>
+        <br><br>
+
+        <style>
+            table, tr, td{
+                border: solid 2px black;
+            }
+            </style>
+        <!-- table 도표 -->
+        <!-- table, tr 행 한줄, td 열한칸 -->
+        <!-- summary 요약, caption 표제 -->
+        <table summary="표의 요약, 학생 명단">
+            <caption>[표1] 표의 제목</caption>
+            <!-- thead, tbody, tfoot -->
+            <thead>
+                <tr>
+                <!-- scope = col, row -->
+                <th scope="col">제목1</th>
+                <th scope="col">제목2</th>
+                <th scope="col">제목3</th>
+                <th scope="col">제목4</th>
+                <th scope="col">제목5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- colspan 열 늘리기 - 가로로 늘림, rowspan 행 늘리기 - 세로로 늘림 -->
+                    <td colspan="2">1</td> <!-- 가로로 두 칸 차지함 -->
+                    <td rowspan="2">2</td> <!-- 세로로 두 칸 차지함 -->
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;&nbsp;&nbsp; 마크업을 잘 해주어야 함.<br>
+        <br> 도전 과제 수행<br>
+            <style>
+                    table{
+                        border: 1px solid black;
+                    }
+                    td{
+                        border: 1px solid black;
+                    }
+                </style>
+                <table>
+                    <tr>
+                        <td colspan="2">up</td>
+                        <td rowspan="2">right</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">left</td>
+                        <td>center</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">down</td>
+                    </tr>
+                </table><br><br>
+
+                <form>
+                    <input type="text" placeholder="아이디를 입력하세요." />
+                    <input type="password" placeholder="패스워드를 입력하세요." />
+
+                    <input type="radio" name="bt1" />
+                    <input type="radio" name="bt1" />
+                    <input type="radio" name="bt1" />
+                    <!-- 라디오 버튼 사용 시 name이 동일해야 함. 라디오 버튼은 하나만 선택해야할 때 사용이 된다.-->
+                    <input type="radio" name="bt2" />
+                    <input type="radio" name="bt2" />
+                    <input type="radio" name="bt2" />
+
+                    <input type="checkbox" />
+                    <input type="checkbox" />
+                    <input type="checkbox" />
+                    <input type="checkbox" />
+
+                    <select>
+                        <option>짜장면</option>
+                        <option>짬뽕</option>
+                    </select>
+                    <!-- 가로 3글자, 세로 5줄 정도의 크기 -->
+                    <textarea cols="30" rows="5">
+
+                    </textarea>
+
+                    <input type="button" value="버튼이름" />
+                    <input type="button" value="테스트버튼" onclick="alert('테스트 버튼이 눌렸습니다.')" />
+
+                    <input type="submit" value="제출" />
+                </form>
+                
     </body>
 </html>

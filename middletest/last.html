@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GREENPLUGGED FESTIVAL 2019</title>
+        <meta charset="utf-8"/>
+        <style>
+            body {
+                margin: 0px;
+                color: #FFF;
+            }
+            #box {
+                position: relative;
+                height: auto;
+                margin: auto;
+                background: white;
+            }
+            #top {
+                background: #40A731;
+                height: 200px;
+                position: relative;
+            }
+            #mid {
+                background: #3C0;
+                float: left;
+                height: 750px;
+                width: 85%;
+                position: relative;
+            }
+            #left {
+                background: rgb(88, 226, 67);
+                float: left;
+                height: 750px;
+                width: 15%;
+                position: relative;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            .menu_li {
+                list-style-type: none;
+            }
+            .menu_left {
+                width: 265px;
+                margin: 0 auto;
+                list-style-type: none;   
+            }
+            .menu_left a {
+                display: block;
+                height: 80px;
+                line-height: 80px;
+                background-color: rgb(88, 226, 67);
+                color: #ffffff;
+                padding: 0 0 px;
+                border-bottom: 1px solid #40A731;
+            }
+            .menu_left a:hover {
+                background-color: #ffffff;
+                color: #40A731;
+            }
+            /* 여기까지 고정메뉴*/
+            table {
+                border-spacing: 10px;
+                width: 80%;
+                border-top: 1px solid #444444;
+                border-collapse: collapse;
+
+            }
+            tr,td {
+                padding-bottom: 5px;
+                border-bottom: 1px solid #444444;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="top">
+                <select onChange="window.location.href=this.value">
+                    <option value="gps.html">SEOUL</option>
+                    <option value="gpg.html">GYEONGJU</option>
+                    <option value="gpd.html">DONGHAE</option>
+                </select>
+            <p style="text-align: center;"><a href="gpg.html"><img src="image/last.jpg" margin="auto"/></a></p>
+            </div>  
+            <div id="left">
+                <ul class="menu_left">
+                    <li><a href="main.html">INFORMATION</a></li>
+                    <li><a href="gps.html">GREENPLUGGED SEOUL</a></li>
+                    <li><a href="gpg.html">GREENPLUGGED GYEONGJU</a></li>
+                    <li><a href="gpd.html">GREENPLUGGED DONGHAE</a></li>
+                    <li><a href="sum.html">PROJECT SUM ∞</a></li>
+                    <li><a href="gr_form.html">JOIN GREENMATE</a></li>
+                    <li><a href="last.html">중간고사 느낀점</a></li>
+                </ul>
+            </div>
+            <div id="mid">
+                <h3>중요하게 배운 점</h3>
+                <ol>
+                    <li>내용이 담은 의미를 드러내기 위한 표현과 단순 꾸밈을 위한 표현의 차이를 알아야한다는 것을 배웠습니다.</li>
+                    <li>html은 과제를 하면 수업 때 배운 것 외에도 궁금한 것들을 찾아보면서 할 수 있어서 재밌었다.</li>
+                    <li>스타일을 내기 전에 내용을 더 중요시해야한다는 점을 느꼈습니다. <del>그럼에도 불구하고 스타일에 너무 연연하게 되었다..</del></li>
+                    <li>태그의 앞 뒤를 정확히 막아주거나, 내가 지정한 ID나 클래스의 오타를 발견해 수정하는 등 사소한 작업으로 고쳐지는 오류를 발견할 때마다 엄청난 쾌감이 있었다.</li>
+                </ol>
+                <h3>아쉬운 점</h3>
+                <ol>
+                    <li>html에 조금 더 집중해서 한 페이지에 모든 콘텐츠를 넣어보고 싶었는데, div를 나누다보니 어려워서 포기한 게 아쉬웠다.</li>
+                    <li>시간을 여유롭지 못하게 잡고 작업을 해서 넣고싶었던 기능들을 다 추가하지 못한 점이 아쉽다.</li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>
