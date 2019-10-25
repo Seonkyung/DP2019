@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+                <style>
+                #myCanvas{
+                    width: 300px; height: 150px;
+                }
+                </style>
+            <canvas id="myCanvas"></canvas>
+
+            <script>
+                var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
+                var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+                ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+                
+                ctx.beginPath();
+                ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+                ctx.moveTo(220, 75);
+                ctx.arc(225, 75, 30 , 0, Math.PI, false);  // Mouth (clockwise)
+                ctx.moveTo(215, 85);
+                ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+                ctx.moveTo(245, 65);
+                ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+                ctx.stroke();
+            </script>
+    </body>
+</html>
