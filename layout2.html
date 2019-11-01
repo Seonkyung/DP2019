@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8" />
+        <style>
+            header{
+                background-color:#02918c;
+                color: white;
+            }
+            #logo_back{
+                color: #cfc91d;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            .float_left{ float: left; }
+            .float_right{ float: right; }
+            .clear{ clear:both; height:0; overflow:hidden;}
+            header>h1{
+                margin: 0px;
+            }
+            #main_visual{
+                height: 600px;
+                background-image: url("images/layout2_visual.jpg");
+                background-size: 100% auto; /* 가로 세로인데 세로는 가로에 따라 맞는 비율로 변경 */
+                background-size: cover;
+                background-repeat:no-repeat;
+                /* 방식에는 repeat, no-repeat, repeat-x, repeat-y 가 있음*/
+                background-color: black;
+                background-position: 50% 50%; /* 50퍼센트는 그림을 가로 세로 기준 가운데에 놓겠다는 뜻임 */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <span>MY</span><span id="logo_back">FOLIO</span>
+                    <!-- div span은 의미없이 구획나누기 좋음 -->
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>SERVICES</li>
+                        <li>MY WORK</li>
+                        <li>CONTACT ME</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">main_visual</div>
+            <div>content1</div>
+            <div>content2</div>
+    </div>
+    </body>
+</html>
